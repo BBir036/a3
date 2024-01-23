@@ -4,7 +4,6 @@
 }
 #banner{
     height: 650px;
-    border-bottom: 1px dotted lightgray;
 }
 .c{
     text-align: center;
@@ -19,7 +18,15 @@
     font-family: Manrope;
     font-size: 16px;
     font-weight: 500;
-    border-bottom:1px dotted lightgray ;
+}
+.txt{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px dashed lightgray;
+    border-bottom: 1px dashed lightgrey;
 }
 .btn{
     color: white;
@@ -28,4 +35,152 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+.pc{
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+}
+.others{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.title{
+    color: #131318;
+    font-size: 20px;
+    font-weight: 800;
+}
+.pcp{
+    color: rgba(19, 19, 24, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+.prc{
+    color: #FF4240;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+}
+.delivery{
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    width: 475px;
+    height: 740px;
+}
+.phn{
+    background-color: #bced6d1a;
+    width: 375px;
+    height: 210px;
+    padding: 15px;
+    border-radius: 16px;
+}
+.mail{
+    background-color: #fddd5f1a;
+    width: 375px;
+    height: 210px;
+    padding: 15px;
+    border-radius: 16px;
+}
+.loc{
+    background-color: #629cf31a;
+    width: 375px;
+    height: 210px;
+    padding: 15px;
+    border-radius: 16px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+.nam , .email, .sub, .num, .msg{
+    display: flex;
+    flex-direction: column;
+}
+#nam , #mail, #sub, #num{
+    height: 65px;
+    width: 320px;
+    background-color: #13131808;
+    border-radius: 12px;
+    padding-left: 20px;
+}
+#msg{
+    width: 670px;
+    height: 305px;
+    background-color: #13131808;
+    border-radius: 12px;
+    padding-bottom: 250px;
+    padding-left: 20px;
+}
+label{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.ek{
+    color: lightgray;
+    font-size: 16px;
+    font-weight: 400;
+}
+.do{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.all{
+    width: 1170px;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #13131808;
+    width: 1170px;
+    height: 150px;
+}
+#social{
+    color: black;
+    font-size: 24px;
+    font-weight: 800;
+}
+.ft{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+#fh{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+footer{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    width: 1440px;
+    height: 455px;
+}
+.dhur{
+    margin-left: 0;
+}
+.jhamela{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
