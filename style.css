@@ -1,9 +1,71 @@
 *{
-    margin: 10px;
     font-family:Manrope ;
+    margin:0;
+}
+/*body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    width: 1170px;
+    display: table-cell;
+    vertical-align: middle;
+}*/
+body{
+    width: 1170px;
+    margin: 120px;
+    align-items: center;
+}
+
+.l{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+span{
+    color: #FF4240;
+}
+.t{
+    color: black;
+    font-size: 36px;
+    font-weight: 800;
 }
 #banner{
     height: 650px;
+    position: relative;
+}
+.black{
+    background-color: black;
+    color: white;
+    width: 565px;
+    height: 165px;
+    padding: 32px;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.hero{
+    font-size: 24px;
+    font-weight: 800;
+    text-align: justify;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 110px;
+}
+.bp{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
 }
 .c{
     text-align: center;
@@ -46,6 +108,12 @@
     justify-content: center;
     gap: 5px;
 }
+.pi{
+    padding: 15px;
+}
+.star,.eye,.love{
+    gap: 5px;
+}
 .title{
     color: #131318;
     font-size: 20px;
@@ -67,6 +135,20 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    gap: 5px;
+}
+.sob{
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+    gap: 40px;
+    height: 500px;
+}
+.para{
+    border-bottom: 1px solid lightgray;
+    border-radius: 0;
+    height: 80px;
+    width: 615px;
+    padding: 0;
 }
 .contact{
     display: flex;
@@ -103,7 +185,8 @@
 #form{
     display: flex;
     flex-direction: column;
-    margin-left: 0;
+    margin-left: 20px;
+    gap: 15px;
 }
 .nam , .email, .sub, .num, .msg{
     display: flex;
@@ -183,4 +266,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.getintouch{
+    width: 1170px;
 }

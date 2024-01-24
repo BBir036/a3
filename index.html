@@ -13,15 +13,102 @@
     <script src="https://kit.fontawesome.com/fc888f2aed.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+              <div class="navbar-start">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a><span>Home</span></a>
+                    </li>
+                    <li>
+                      <a>About</a>
+                    </li>
+                    <li>
+                      <a>Pages</a>
+                    </li>
+                    <li>
+                      <a>Blog</a>
+                    </li>
+                    <li>
+                      <a>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="btn btn-ghost lg:text-black text-4xl font-extrabold"
+                  >Hockey<span class="text-red-500">’</span>s</a
+                >
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li class="text-hockey-primary">
+                    <a>Home</a>
+                  </li>
+                  <li>
+                    <a>About</a>
+                  </li>
+                  <li>
+                    <a>Pages</a>
+                  </li>
+                  <li>
+                    <a>Blog</a>
+                  </li>
+                  <li>
+                    <a>Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-end gap-5">
+                <img
+                  class="hidden lg:inline-block"
+                  src="Images/search-icon.svg"
+                  alt=""
+                />
+                <button class="btn btn-error">Get Ticket</button>
+              </div>
+            </div>
+        </nav>
+    </header><br><br>
     <div id="banner">
-        <div class="carousel w-290 h-120">
+        <div class="carousel lg:w-100% h-120">
             <div id="slide1" class="carousel-item relative w-290 h-130 flex justify-center">
               <img src="1.png" class="w-290 h-130" />
               <div class="absolute flex justify-around transform -translate-y-1/2 left-5 right-5 bottom-10">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
               </div>
             </div> 
+            <div id="slide2" class="carousel-item relative w-290 h-130 flex justify-center">
+                <img src="https://www.thearabianstories.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-19-at-22.24.02-1170x610.jpeg" class="w-290 h-130" />
+                <div class="absolute flex justify-around transform -translate-y-1/2 left-5 right-5 bottom-10">
+                  <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                  <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                </div>
+              </div> 
+        </div>
+        <div class="black">
+            <h2 class="hero">Meet all the heroes from the field</h2>
+            <p class="bp">Explore a new world of joy. Join our community and play with us. Meet our pro players and have a great mentorship.</p>
         </div>
     </div><br><br>
 
@@ -32,23 +119,28 @@
             </h3>
             <p class="cl">
                 Join our professional hockey club and enjoy the joy of sports. Why us? Let's know... <br>
-            </p>
+            </p><br>
         </div>
-
-
-        <!--adhuraaaaaaaaaa-->
-        <div class="stats shadow">
-            <div class="stat">
-                <div class="stat-figure text-secondary">
-                  <div class="avatar online">
-                    <div class="w-16 rounded-full">
-                      <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                    </div>
-                  </div>
-                </div>
-                <div class="stat-value">86%</div>
-                <div class="stat-title">Tasks done</div>
-                <div class="stat-desc text-secondary">31 tasks remaining</div>
+        <div class="gol flex gap-20 m-10">
+            <div class="g1 flex flex-col justify-center items-center gap-3">
+                <div class="radial-progress text-red-600" style="--value:87;" role="progressbar"><span class="text-black font-black">87%</span></div>
+                <h4 class="text-black font-black">Prayer Facility</h4>
+                <p class="text-slate-400">Prayer facility is available</p>
+            </div>
+            <div class="g2 flex flex-col justify-center items-center gap-3">
+                <div class="radial-progress text-green-600" style="--value:95;" role="progressbar"><span class="text-black font-black">95%</span></div>
+                <h4 class="text-black font-black">Experienced Coach</h4>
+                <p class="text-slate-400">Best coach is here to guide you</p>
+            </div>
+            <div class="g3 flex flex-col justify-center items-center gap-3">
+                <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar"><span class="text-black font-black">90%</span></div>
+                <h4 class="text-black font-black">Senior Player</h4>
+                <p class="text-slate-400">Best players of the country</p>
+            </div>
+            <div class="g4 flex flex-col justify-center items-center gap-3">
+                <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar"><span class="text-black font-black">80%</span></div>
+                <h4 class="text-black font-black">Training Ground</h4>
+                <p class="text-slate-400">Well decorated training ground</p>
             </div>
         </div>
     </div><br><br>
@@ -59,13 +151,13 @@
             </h3>
             <p class="cl">
                 Let's have a look in our programs... <br>
-            </p>
+            </p><br>
         </div><br><br>
         <div class="pics">
             <div class="card w-100 h-100 m-0 image-full">
                 <figure><img src="2.png" alt=" " /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Junior Program</h2>
+                <div class="card-body flex flex-coloumn">
+                  <h2 class="card-title pt-20">Junior Program</h2>
                   <p>This is for juniors whose age is under 10</p>
                   <div class="card-actions ml-0">
                     <button class="btn btn-error">Register Now!</button>
@@ -74,19 +166,19 @@
             </div>
             <div class="card w-100 h-100 m-0 image-full">
                 <figure><img src="3.png" alt=" " /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Teenager Program</h2>
+                <div class="card-body flex flex-coloumn">
+                  <h2 class="card-title pt-20">Teenager Program</h2>
                   <p>This is for juniors whose age is under 18 and above 10</p>
                   <div class="card-actions ml-0">
                     <button class="btn btn-error">Register Now!</button>
                   </div>
                 </div>
             </div>
-        </div>
+        </div><br>
         <div class="card w-150 bg-base-100 ml-0 p-0 image-full">
             <figure><img src="4.png" alt=" " /></figure>
-            <div class="card-body flex flex-coloumn justify-center">
-              <h2 class="card-title">Professional Program</h2>
+            <div class="card-body flex flex-coloumn">
+              <h2 class="card-title pt-20">Professional Program</h2>
               <p>This is for the players who are professional and want to build their career as a hockey player. </p>
               <div class="card-actions ml-0">
                 <button class="btn btn-error">Register Now!</button>
@@ -103,7 +195,7 @@
             <p class="cl">
                 Fresh arrival!!! Just for you!!! What are you waitting for? Just choose and book yours!! <br>
             </p>
-        </div>
+        </div><br>
         <div class="grid grid-cols-2 gap-6">
             <div class="pc w-140 h-55 flex">
                 <div class="pi flex gap-5">
@@ -212,7 +304,7 @@
                     <img src="8.png" alt="">
                 </div>
                 <div class="others">
-                    <div class="icons flex">
+                    <div class="icons flex gap-4">
                         <div class="star flex justify-center items-center">
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                             <p>5.0</p>
@@ -311,6 +403,77 @@
             </div>                
         </div>
     </div><br><br>
+    <div class="qstn">
+        <div class="txt">
+            <h3 class="c">
+                Client Questions
+            </h3>
+            <p class="cl">
+                Got a question?? Don't be shy, ask us. You can also check the other clients question given below! <br>
+            </p>
+        </div><br><br>
+        <div class="sob flex p-5">
+            <div class="chobi">
+                <img src="11.png" alt="">
+            </div>
+            <div class="qs leading-none">
+                <div class="collapse collapse-plus para">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-xl font-bold font-medium">
+                     Our Equipment
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>Jersey, ball, bat.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus para">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                      Hockey Training
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>We train by the best trainers</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus para">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                      Private lessons
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>Private lessons are provided for weak students</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus para">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                      Ski Touring
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>Ski touring is also available.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus para">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                      Booking
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>For your booking, message us or call.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus para">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-xl font-medium">
+                      Pricing
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>Contact us to know more about pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
     <div class="getintouch">
         <div class="txt">
             <h3 class="c">
@@ -341,35 +504,35 @@
             </div>
             <div class="form">
                 <form action="" id="form">
-                    <div class="grid grid-cols-2">
+                    <div class="grid grid-cols-2 gap-5">
                         <div class="nam">
-                            <label for="nam">Your Name</label>
+                            <label for="nam">Your Name</label><br>
                             <input type="text" id="nam" placeholder="Enter your full name">
                         </div>
                         <div class="email">
-                            <label for="mail">Your Email</label>
+                            <label for="mail">Your Email</label><br>
                             <input type="email" id="mail" placeholder="Enter your email">
                         </div>
                         <div class="sub">
-                            <label for="sub">Subject</label>
+                            <label for="sub">Subject</label><br>
                             <input type="text" id="sub" placeholder="Enter your subject">
                         </div>
                         <div class="num">
-                            <label for="num">Phone Number</label>
+                            <label for="num">Phone Number</label><br>
                             <input type="number" id="num" placeholder="Enter your phone number">
                         </div>
                     </div>
                     <div class="msg">
-                        <label for="msg">Message</label>
+                        <label for="msg">Message</label><br>
                         <input type="text" id="msg" placeholder="Write your message">
                     </div><br>
                     <button class="btn btn-error w-160">Send Message</button>
                 </form>  
             </div>
         </div><br><br>
-        <div class="social flex">
+        <div class="social flex gap-5">
             <div id="social"><h3>Social Media</h3></div>
-            <div class="ic flex gap-2">
+            <div class="ic flex gap-8">
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
@@ -378,7 +541,7 @@
         </div>
     </div><br><br>
 </body>
-<footer class="footer p-10 bg-[#131318]">
+<footer class="footer bg-[#131318] flex justify-center items-center gap-20">
     <aside class="f">
       <br><h2 id="fh">Get In Touch</h2><br>
       <p>Get in touch with us. You can get us through phone,<br> email or social media. You can also come to our office.</p><br>
@@ -388,7 +551,7 @@
             (+62) 123-321-543</p>
     </aside>
     <nav>
-        <header class="ft">Company</header> 
+        <header class="ft pt-9">Company</header> <br>
         <a class="link link-hover">About us</a>
         <a class="link link-hover">Leadership</a>
         <a class="link link-hover">Career</a>
@@ -396,14 +559,14 @@
         <a class="link link-hover">Legal Notice</a>
     </nav> 
     <nav>
-        <header class="ft">Support</header> 
+        <header class="ft pt-3">Support</header> <br>
         <a class="link link-hover">Help Center</a>
         <a class="link link-hover">FAQ</a>
         <a class="link link-hover">Ticket Suppport</a>
         <a class="link link-hover">Contact Us</a>
     </nav>
     <nav>
-      <header class="ft">Services</header> 
+      <header class="ft pt-10">Services</header> <br>
       <a class="link link-hover">Academy</a>
       <a class="link link-hover">Group Lesson</a>
       <a class="link link-hover">Private Lesson</a>
